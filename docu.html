@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="docu.css">
+	<title>Technical documentation page</title>
+</head>
+<body>
+	<nav id="navbar">
+		<header class="topic">HTML documentation</header>
+		<a href="#what_is_html" class="nav-link">What is HTML</a>
+		<a href="#html_element" class="nav-link">HTML element</a>
+		<a href="#attributes" class="nav-link">Attributes</a>
+		<a href="#html_anatomy" class="nav-link">HTML anatomy</a>
+		<a href="#special_characters_in_html" class="nav-link">
+		Special characters in HTML</a>
+		<a href="#html_comments" class="nav-link">HTML comments</a></nav>
+	<main id="main-doc">
+		<section class="main-section" id="what_is_html">
+			<header>What is HTML</header><a name="what_html">
+			<p>
+				<code>HTML(Hypertext Markup Language)</code> is not a programming language. It is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.
+			</p></a></section>
+		<section class="main-section" id="html_element">
+			<header>HTML element</header><a name="element">
+			<p>
+				<code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code><br>
+			</p>
+			<p>
+				The anatomy of our element is:<br>
+				<ul>
+					<li><b>The opening tag:</b> This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</li>
+					<li><b>The content:</b> This is the content of the element. In this example, it is the paragraph text.</li>
+					<li><b>The closing tag:</b> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+				</ul>
+				The element is the opening tag, followed by content, followed by the closing tag.
+			</p></a></section>
+		<section class="main-section" id="attributes">
+			<header>Attributes</header><a name="attribute">
+			<p>
+				Elements can also have attributes. Attributes look like this:
+			<p>
+				<code>&lt;p class="editor-note"&gt;My cat is very grumpy&lt/p&gt;</code>
+			</p>
+				Attributes contain extra information about the element that won't appear in the content. In this example, the <code>class</code> attribute is an identifying name used to target the element with style information.
+			</p>
+			<p>
+				An attribute should have:
+				<ul>
+					<li>A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)</li>
+					<li>The attribute name, followed by an equal sign.</li>
+					<li>An attribute value, wrapped with opening and closing quote marks</li>
+				</ul>
+			</p></a></section>
+		<section class="main-section" id="html_anatomy">
+			<header>HTML anatomy</header><a name="anatomy">
+			<p>
+				Individual HTML elements aren't very useful on their own. Next, let's examine how individual elements combine to form an entire HTML page:
+				<ul>
+					<li><code>&lt;!DOCTYPE html&gt;</code>: The doctype. 
+					When HTML was young (1991-1992), doctypes were meant to act as 
+					links to a set of rules that the HTML page had to follow to be considered good HTML. the doctype is a historical artifact that needs to be included for everything else to work right.</li>
+					<li><code>&lt;html&gt;&lt;/html&gt;</code>: This element wraps all the content on the page. It is sometimes known as the root element.</li>
+					<li><code>&lt;head&gt;&lt;/head&gt;</code>: This element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more.</li>
+					<li><code>&lt;meta charset="utf-8"&gt;</code>: This element specifies the character set for your document to UTF-8, which includes most characters from the vast majority of human written languages. With this setting, the page can now handle any textual content it might contain. There is no reason not to set this, and it can help avoid some problems later.</li>
+					<li><code>&lt;title&gt;&lt;/title&gt;</code>: This sets the title of the page, which is the title that appears in the browser tab the page is loaded in. The page title is also used to describe the page when it is bookmarked.</li>
+					<li><code>&lt;body&gt;&lt;/body&gt;</code>: This contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.
+					</li>
+				</ul>
+			</p></a></section>
+		<section class="main-section" id="special_characters_in_html">
+			<header>Special characters in HTML</header><a name="special_char">
+			<p>
+				In HTML, the characters <, >,",' and & are special characters. They are parts of the HTML syntax itself. So how do you include one of these special characters in your text? For example, if you want to use an ampersand or less-than sign, and not have it interpreted as code.
+			</p>
+			<p>
+				You do this with character references. These are special codes that represent characters, to be used in these exact circumstances. Each character reference starts with an ampersand (&), and ends with a semicolon (;).
+			</p></a></section>
+		<section class="main-section" id="html_comments">
+			<header>HTML comments</header><a name="comments">
+			<p>
+				HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user. The purpose of comments is to allow you to include notes in the code to explain your logic or coding. This is very useful if you return to a code base after being away for long enough that you don't completely remember it. Likewise, comments are invaluable as different people are making changes and updates.
+			</p>
+			<p>
+				To write an HTML comment, wrap it in the special markers
+				<code> &lt;!--</code> and <code>--&gt;</code>		
+			</p></a></section>
+	</main>
+</body>
+</html>
